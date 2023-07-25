@@ -1,18 +1,23 @@
 # Instalando e configurando o nginx:
 **1. update and install nginx with apt:**
-```sudo apt update && sudo apt install nginx -y
+```
+sudo apt update && sudo apt install nginx -y
 ```
 **2.Enable the nginx starts when the vm starts too:**
-```sudo systemctl enable nginx
+```
+sudo systemctl enable nginx
 ```
 **3. Delete the default file of nginx web server:**
-```sudo rm -rf /var/www/html/*
+```
+sudo rm -rf /var/www/html/*
 ```
 **4. Create a new file custom to open in web server:**
-```sudo vim /var/www/html/index.html
+```
+sudo vim /var/www/html/index.html
 ```
 **5. Paste the .html file:**
-```<!doctype html>
+```
+<!doctype html>
 
 <html>
 
@@ -33,6 +38,7 @@
 </html>
 ```
 **6. Restart nginx with systemctl:**
-```sudo systemctl restart nginx
+```
+sudo systemctl restart nginx
 ```
 ``is it.``
